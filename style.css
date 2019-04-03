@@ -1,0 +1,12 @@
+/* Css variables that store design vars to later use */
+
+:root { /*"Roots" the defention of author defined variables to be later used*/
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rbga(104, 104, 104, 0.8) /* function tells the opaquity of this color*/
+}
+
+html {
+  box-sizing:
+}
