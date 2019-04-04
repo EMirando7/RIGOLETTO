@@ -1,17 +1,38 @@
-:root {
-  --primary:#5f9ea0;
+/* Css variables that store design vars to later use */
+
+:root { /*"Roots" the defention of author defined variables to be later used*/
+  --primary: #ddd;
   --dark: #333;
   --light: #fff;
-  --shadow: 0 1px 5x rgba(104, 104, 104, 0.8);
+  --shadow: 0 1px 5px rbga(104, 104, 104, 0.8) /* function tells the opaquity of this color*/
 }
 
 html {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--dark);
+
 }
 
 body {
   background: #ccc;
-  margin: 30px 50px;
+  margin: 30px 50px; /*This denotes the space BETWEEN elements: first parameter top and bottom, and second is left and right*/
+  line-height: 1.4;/*Unitless values such as these are preffered to avoid dicrepancies due to inheritance, like to example 1.4em is bad */
+}
+
+.btn {
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem; /*Top-bottom and left-right, respectively*/
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%; /*A percentage allows for the picture to change with the browser while conserving the WHOLE image without distortion*/
+}
+
+.wrapper {/*Denotes the whole website, includes the nav/showcase/boxes*/
+  display: grid;
+  grid-gap: 20px
 }
